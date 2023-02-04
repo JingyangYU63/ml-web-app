@@ -19,6 +19,8 @@ Github Repository: https://github.com/JingyangYU63/ml-web-app
 
 Dockerhub Repository: https://hub.docker.com/repository/docker/jy732/ml-web-app/general
 
+Heroku App Link: https://ml-web-app.herokuapp.com/
+
 ## 3. Model intro
 
 I proposed the method of predicting a future day's receipts number based on the past few (30 in my code) days. For the samll volume of data, I choose the a linear model - Ridge Regression over deep learning/ neural networks (a simple model usually exhibits better performance over deep neural networks when data volume is relatively small). Before building up my model, I choose to read and pre-process the data, including adding a normalization step to control the data value within a common scale (10^6-10^7 is too large). As the optimization method, SGD + momentum helps accelerate gradients vectors in the right directions, thus leading to faster converging. Beside that, I also observed that a good memory locality (where the variable’s memory accesses are
