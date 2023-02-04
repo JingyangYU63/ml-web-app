@@ -1,4 +1,4 @@
-Files/folders comments:
+# Files/folders comments:
 
 ridge_regression.py: The jupyter notebook I used to train my model, downloaded from Google Colab;
 
