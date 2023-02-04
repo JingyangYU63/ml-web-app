@@ -1,34 +1,47 @@
-# Deploy ML models with FastAPI, Docker, and Heroku
+# Deploy ML models with Python, FastAPI, Docker and Heroku
+## 1. Files/ folders comments:
 
-### 1. Develop and save the model with this Colab
+ridge_regression.py: The jupyter notebook I used to train my model, downloaded from Google Colab;
 
-[Open Colab](https://colab.research.google.com/drive/1uaALcaatvxOu42IhQA4r0bahfdpw-Z7v?usp=sharing)
+app folder: contains an implementation of web application using fastapi;
 
-### 2. Create Docker container
+main.py: creates the web app and implementes GET/POST HTTP methods;
 
+model folder: wraps up the trained model;
+
+model.py: retrieves the saved model and sets up I/O;
+
+trained linear model.pkl: The trained model I saved from ridge_regression.py.
+
+## 2. Relevent links
+
+Github Repository: https://github.com/JingyangYU63/ml-web-app
+
+Dockerhub Repository: https://hub.docker.com/repository/docker/jy732/ml-web-app/general
+
+Heroku App Link: https://ml-web-app.herokuapp.com/
+
+## 3. Model intro
+
+I proposed the method of predicting a future day's receipts number based on the past few (30 in my code) days. For the samll volume of data, I choose a linear model - Ridge Regression over deep learning/ neural networks like LSTM (a simple model usually exhibits better performance over deep neural networks when data volume is relatively small). Before building up my model, I choose to read and pre-process the data, including adding a data normalization step to maintain the data value within a common scale (10^6-10^7 is too large). As the optimization method, SGD + momentum helps accelerate gradients vectors in the right directions, thus leading to faster converging (this is crucial when tuning the hyperparameters which requires high amount of computation). Beside that, I also observed that a good memory locality (where the variable’s memory accesses are more predictable, i.e. avoids memory allocation in the running of program by pre-allocating memories ahead) could improve performance of SGD. In this project, Bayesian Optimization is adapted for hyperparameter tuning for its efficiency over grid search/ random search (instead of painstakingly trying every hyperparameter set or testing hyperparameter sets at random, the Bayesian optimization method can converge to the optimal hyperparameters. Thus, the best hyperparameters can be obtained without exploring the entire sample space).
+
+## 4. How to run this app?
+
+### i. Run docker in command line
+
+Run commands below in command line to lauch the app (make sure you're under the directory of ml-web-app):
 ```bash
 docker build -t app-name .
 
 docker run -p 80:80 app-name
 ```
+Then open your web browser at your local host port http://0.0.0.0:80/docs. Press the "Try it out" icon under the POST tab and replace the "string" with the month of 2022 you're looking for.
+<img width="1382" alt="image" src="https://user-images.githubusercontent.com/73151841/216742437-1125e7a8-e4d9-4f27-b6f0-72d45873bf62.png">
+By hitting the execute icon you'll get the estimated number of the scanned receipts for the month you specified at the 	
+response body.
+<img width="1381" alt="image" src="https://user-images.githubusercontent.com/73151841/216753914-cc26d085-8944-44df-9104-1450a50867b5.png">
 
-### 3. Create Git repo
+### ii. Send POST request through Postman (Recommended)
 
-If you clone this repo this step is not needed. Or you can delete this git repo with `rm -rf .git` and start with a new one:
-
-```bash
-git init
-git add .
-git commit -m "initial commit"
-git branch -M main
-```
-
-### 4. Create Heroku project
-
-```bash
-heroku login
-heroku create your-app-name
-heroku git:remote your-app-name
-heroku stack:set container
-git push heroku main
-```
+First you need to signup with Postman (https://www.postman.com/), then create a new request. Select the POST request and paste the link (https://ml-web-app.herokuapp.com/predict) to the webpage. Then select "Body" tab below and enter the request body in JSON format. Finally, you will get the result by hitting "Send" icon.
+<img width="1438" alt="image" src="https://user-images.githubusercontent.com/73151841/216753552-365c2d1b-89f7-4c3b-af5f-3a663e23e933.png">
