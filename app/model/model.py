@@ -12,6 +12,6 @@ with open(f"{BASE_DIR}/trained linear model.pkl", "rb") as f:
 
 def predict_pipeline(month):
     month = int(month)
-    assert 1 <= month <= 12
+    assert 1 <= month <= 12, "Please enter a correct format of month input!"
     pred = model.iloc[month - 1].item()
     return str(pred)
