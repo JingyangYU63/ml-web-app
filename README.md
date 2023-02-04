@@ -42,4 +42,7 @@ By hitting the execute icon you'll get the estimated number of the scanned recei
 response body.
 <img width="1368" alt="image" src="https://user-images.githubusercontent.com/73151841/216742459-433d66c9-02bc-4bd4-bb86-8ed45897d243.png">
 
-### ii. 
+### ii. Send POST request through Postman
+
+First you need to signup with Postman (https://www.postman.com/), then create a new request. Select the POST request and paste the link (https://ml-web-app.herokuapp.com/predict) to the webpage. Then select "Body" tab below and enter the JSON request. Finally, you will get the result by hitting "Send" icon.
+<img width="1438" alt="image" src="https://user-images.githubusercontent.com/73151841/216753552-365c2d1b-89f7-4c3b-af5f-3a663e23e933.png">
