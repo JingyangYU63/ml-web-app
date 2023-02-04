@@ -15,6 +15,8 @@ trained linear model.pkl: The trained model I saved from ridge_regression.py.
 
 ## 2. Relevent links
 
+Github Repository: https://github.com/JingyangYU63/ml-web-app
+
 Dockerhub Repository: https://hub.docker.com/repository/docker/jy732/ml-web-app/general
 
 ## 3. Model intro
