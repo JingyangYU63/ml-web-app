@@ -13,6 +13,10 @@ model.py: retrieve the saved model and set up I/O;
 
 trained linear model.pkl: The trained model I saved from ridge_regression.py.
 
-### 2. Relevent Link
+### 2. Relevent links
 
 Dockerhub Repository: https://hub.docker.com/repository/docker/jy732/ml-web-app/general
+
+### 3. Model intro
+
+For the samll volume of data, I choose the a linear model - Ridge Regression over deep learning/ neural networks (a simple model usually exhibits better performance over deep neural networks when data volume is relatively small).
