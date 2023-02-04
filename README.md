@@ -44,5 +44,5 @@ response body.
 
 ### ii. Send POST request through Postman (Recommended)
 
-First you need to signup with Postman (https://www.postman.com/), then create a new request. Select the POST request and paste the link (https://ml-web-app.herokuapp.com/predict) to the webpage. Then select "Body" tab below and enter the JSON request. Finally, you will get the result by hitting "Send" icon.
+First you need to signup with Postman (https://www.postman.com/), then create a new request. Select the POST request and paste the link (https://ml-web-app.herokuapp.com/predict) to the webpage. Then select "Body" tab below and enter the request body in JSON format. Finally, you will get the result by hitting "Send" icon.
 <img width="1438" alt="image" src="https://user-images.githubusercontent.com/73151841/216753552-365c2d1b-89f7-4c3b-af5f-3a663e23e933.png">
