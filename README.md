@@ -24,4 +24,12 @@ more predictable, i.e.avoid memory allocation in the running of program by pre-a
 
 ## 4. How to run this app?
 
-### i.
+### i. Run docker in command line
+
+Run commands below in command line to lauch the app (make sure you're under the directory of ml-web-app):
+```bash
+docker build -t app-name .
+
+docker run -p 80:80 app-name
+```
+Then open your web browser at http://0.0.0.0:80/docs. Press the "Try it out" icon under the POST tab and replace the "string" with the month of 2022 you're looking for. By hitting the execute icon you'll get the estimated number of the scanned receipts for the month you entered.
