@@ -1,7 +1,9 @@
 # Deploy ML models with Python, FastAPI, Docker and Heroku
 ## 1. Files/ folders comments:
 
-ridge_regression.py: The jupyter notebook I used to train my model, downloaded from Google Colab;
+ridge_regression.ipynb: The original jupyter notebook I used to train my model, downloaded from Google Colab;
+
+ridge_regression.py: The transformed .py format of ridge_regression.ipynb;
 
 app folder: contains an implementation of web application using fastapi;
 
