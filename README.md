@@ -23,3 +23,5 @@ I proposed the method of predicting a future day's receipts number based on the 
 more predictable, i.e.avoid memory allocation in the running of program by pre-allocating memories ahead) could improve performance of SGD. In this project, Bayesian Optimization is adapted for hyperparameter tuning for its efficiency over grid search/ random search (instead of painstakingly trying every hyperparameter set or testing hyperparameter sets at random, the Bayesian optimization method can converge to the optimal hyperparameters. Thus, the best hyperparameters can be obtained without exploring the entire sample space).
 
 ### 4. How to run this app?
+
+## i.
