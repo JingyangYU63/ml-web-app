@@ -32,4 +32,4 @@ docker build -t app-name .
 
 docker run -p 80:80 app-name
 ```
-Then open your web browser at http://0.0.0.0:80/docs. Press the "Try it out" icon under the POST tab and replace the "string" with the month of 2022 you're looking for. By hitting the execute icon you'll get the estimated number of the scanned receipts for the month you entered.
+Then open your web browser at your local host port http://0.0.0.0:80/docs. Press the "Try it out" icon under the POST tab and replace the "string" with the month of 2022 you're looking for. By hitting the execute icon you'll get the estimated number of the scanned receipts for the month you specified.
