@@ -94,7 +94,7 @@ print(W0.shape)
 def sgd_mss_with_momentum_threaded(Xs, Ys, gamma, W0, alpha, beta, B, num_epochs, num_threads):
     (d, n) = Xs.shape
     (c, d) = W0.shape
-    # perform global setup/initialization/allocation (students should implement this)
+    # perform global setup/initialization/allocation
     V = numpy.zeros(W0.shape)
     W = numpy.copy(W0)
     gradient = numpy.zeros(W0.shape)
@@ -293,7 +293,6 @@ def bayes_opt(objective, d, gamma, sigma2_noise, acquisition, random_x, gd_nruns
 # returns   function that computes the LCB acquisition function
 def lcb_acquisition(kappa):
     def A_lcb(Ybest, mean, stdev):
-        # TODO students should implement this
         return mean - kappa * stdev
     return A_lcb
 
