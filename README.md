@@ -39,7 +39,7 @@ Then open your web browser at your local host port http://0.0.0.0:80/docs. Press
 <img width="1382" alt="image" src="https://user-images.githubusercontent.com/73151841/216742437-1125e7a8-e4d9-4f27-b6f0-72d45873bf62.png">
 By hitting the execute icon you'll get the estimated number of the scanned receipts for the month you specified at the 	
 response body.
-<img width="1368" alt="image" src="https://user-images.githubusercontent.com/73151841/216742459-433d66c9-02bc-4bd4-bb86-8ed45897d243.png">
+<img width="1381" alt="image" src="https://user-images.githubusercontent.com/73151841/216753914-cc26d085-8944-44df-9104-1450a50867b5.png">
 
 ### ii. Send POST request through Postman (Recommended)
 
