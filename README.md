@@ -1,5 +1,5 @@
 # Deploy ML models with Python, FastAPI and Docker
-### 1. Files/folders comments:
+### 1. Files/ folders comments:
 
 ridge_regression.py: The jupyter notebook I used to train my model, downloaded from Google Colab;
 
@@ -13,4 +13,6 @@ model.py: retrieve the saved model and set up I/O;
 
 trained linear model.pkl: The trained model I saved from ridge_regression.py.
 
-Dockerhub Link: https://hub.docker.com/repository/docker/jy732/ml-web-app/general
+### 2. Relevent Link
+
+Dockerhub Repository: https://hub.docker.com/repository/docker/jy732/ml-web-app/general
