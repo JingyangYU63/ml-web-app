@@ -9,3 +9,5 @@ model folder: contains the trained model;
 model.py: retrieve the saved model and set up I/O;
 
 trained linear model.pkl: The trained model I saved from ridge_regression.py.
+
+Dockerhub Link: https://hub.docker.com/repository/docker/jy732/ml-web-app/general
