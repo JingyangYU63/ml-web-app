@@ -40,10 +40,10 @@ docker run -p 80:80 app-name
 Then open your web browser at your local host port http://0.0.0.0:80/docs. Press the "Try it out" icon under the POST tab and replace the "string" with the month of 2022 you're looking for.
 <img width="1382" alt="image" src="https://user-images.githubusercontent.com/73151841/216742437-1125e7a8-e4d9-4f27-b6f0-72d45873bf62.png">
 By hitting the execute icon you'll get the estimated number of the scanned receipts for the month you specified at the 	
-response body (getting the number of the scanned receipts for June 2023 in the below example).
+response body (getting the number of the scanned receipts for June 2022 in the below example).
 <img width="1381" alt="image" src="https://user-images.githubusercontent.com/73151841/216753914-cc26d085-8944-44df-9104-1450a50867b5.png">
 
 ### ii. Send POST request through Postman (Recommended)
 
-First you need to signup with Postman (https://www.postman.com/), then create a new request. Select the POST request and paste the link (https://ml-web-app.herokuapp.com/predict) to the webpage. Then select "Body" tab below and enter the request body in JSON format. Finally, you will get the result by hitting "Send" icon (getting the number of the scanned receipts for June 2023 in the below example).
+First you need to signup with Postman (https://www.postman.com/), then create a new request. Select the POST request and paste the link (https://ml-web-app.herokuapp.com/predict) to the webpage. Then select "Body" tab below and enter the request body in JSON format. Finally, you will get the result by hitting "Send" icon (getting the number of the scanned receipts for June 2022 in the below example).
 <img width="1438" alt="image" src="https://user-images.githubusercontent.com/73151841/216753552-365c2d1b-89f7-4c3b-af5f-3a663e23e933.png">
