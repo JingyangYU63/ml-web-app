@@ -43,7 +43,7 @@ docker run -p 80:80 app-name
 ```
 Then open your web browser at your local host port http://0.0.0.0:80/docs. Press the "Try it out" icon under the POST tab and replace the "string" with the month of 2022 you're looking for.
 <img width="1382" alt="image" src="https://user-images.githubusercontent.com/73151841/216742437-1125e7a8-e4d9-4f27-b6f0-72d45873bf62.png">
-By hitting the execute icon you'll get the estimated number of the scanned receipts for the month you specified at the 	
+By hitting the execute icon you'll get the estimated number of the scanned receipts for the month you specified (for here entries of 6, Jun and June are equivalent) at the 	
 response body (getting the number of the scanned receipts for June 2022 in the below example).
 <img width="1381" alt="image" src="https://user-images.githubusercontent.com/73151841/216753914-cc26d085-8944-44df-9104-1450a50867b5.png">
 
