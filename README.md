@@ -49,5 +49,5 @@ response body (getting the number of the scanned receipts for June 2022 in the b
 
 ### ii. Send POST request through Postman (Recommended)
 
-First you need to signup with Postman (https://www.postman.com/), then create a new request. Select the POST request and paste the link (https://ml-web-app.herokuapp.com/predict) to the webpage. Then select "Body" tab below and enter the request body in JSON format. Finally, you will get the result by hitting "Send" icon (getting the number of the scanned receipts for June 2022 in the below example).
+First you need to signup with Postman (https://www.postman.com/), then create a new request. Open up your work space, create a new request and select the POST request to paste the link (https://ml-web-app.herokuapp.com/predict) to the input rectangle. Then select "Body" tab below and enter the request body in JSON format. Finally, you will get the result by hitting "Send" icon (getting the number of the scanned receipts for June 2022 in the below example).
 <img width="1438" alt="image" src="https://user-images.githubusercontent.com/73151841/216753552-365c2d1b-89f7-4c3b-af5f-3a663e23e933.png">
